@@ -1,0 +1,194 @@
+/* Basic reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Page */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f6f8;
+  color: #222;
+}
+
+/* Header */
+header {
+  background-color: #176b87;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+header h1 {
+  margin-bottom: 5px;
+}
+
+/* Main content */
+main {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* Sections */
+section {
+  background-color: white;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+  margin-bottom: 20px;
+}
+
+/* Form */
+#note-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#note-form input,
+#note-form select,
+#search-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Buttons */
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #176b87;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+button:hover {
+  background-color: #0f4f65;
+}
+
+/* Error message */
+#error-message {
+  color: #c62828;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+/* Search */
+#search-input {
+  margin-bottom: 15px;
+}
+
+/* Notes list */
+#notes-list {
+  list-style: none;
+}
+
+/* Note card */
+.note-card {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  background-color: #fafafa;
+}
+
+/* Note text */
+.note-text {
+  margin-bottom: 10px;
+  overflow-wrap: anywhere;
+}
+
+/* Category labels */
+.category-label {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-bottom: 8px;
+}
+
+/* Personal category */
+.category-personal {
+  border-left: 6px solid teal;
+}
+
+/* Work category */
+.category-work {
+  border-left: 6px solid darkred;
+}
+
+/* Study category */
+.category-study {
+  border-left: 6px solid blue;
+}
+
+/* Category label colours */
+.category-personal .category-label {
+  background-color: #d8f3f0;
+  color: #00695c;
+}
+
+.category-work .category-label {
+  background-color: #f8dddd;
+  color: #8b0000;
+}
+
+.category-study .category-label {
+  background-color: #dde7ff;
+  color: #003399;
+}
+
+/* Date */
+.note-date {
+  display: block;
+  color: #666;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+/* Delete button */
+.delete-btn {
+  background-color: #b71c1c;
+}
+
+.delete-btn:hover {
+  background-color: #7f0000;
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+  main {
+    margin: 20px auto;
+    padding: 0 12px;
+  }
+
+  section {
+    padding: 18px;
+  }
+
+  #note-form {
+    flex-direction: column;
+  }
+
+  header {
+    padding: 25px 15px;
+  }
+
+  header h1 {
+    font-size: 28px;
+  }
+}
